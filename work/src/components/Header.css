@@ -1,0 +1,40 @@
+/* Header.css */
+.header {
+  position: relative;
+  background-color: black; /* Set header background color */
+  color: white; /* Set text color */
+}
+
+.line-above-navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #ccc;
+}
+
+.nav-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px; /* Add padding for better spacing */
+  position: relative;
+}
+
+.logo {
+  margin-right: auto; /* Pushes the logo to the far left */
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+  .nav-area {
+      flex-direction: column; /* Stack items vertically on small screens */
+      align-items: flex-start; /* Align items to the start on small screens */
+  }
+
+  .logo {
+      margin-right: 0; /* Reset margin */
+      margin-bottom: 10px; /* Add space between logo and navbar */
+  }
+}

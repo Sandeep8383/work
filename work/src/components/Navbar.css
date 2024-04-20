@@ -1,0 +1,82 @@
+/* Navbar.css */
+.nav-area {
+  display: flex;
+  justify-content: space-between; /* Align items to the left and right edges */
+}
+
+.brand {
+  padding: 10px;
+}
+
+.menus {
+  display: none;
+}
+
+.hamburger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hamburger:hover {
+  cursor: pointer;
+}
+
+.hamburger-items {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.menu-items {
+  display: inline-block;
+}
+
+/* Add any additional styling as needed */
+
+.navbar {
+  background-color: black;
+  color: white;
+}
+
+.menu-items a,
+.menu-items button {
+  color: white;
+}
+
+/* Add styles for the dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  color: white;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #333;
+}
+
+.menu-items:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .menus {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+  }
+
+  .hamburger,
+  .hamburger-items {
+    display: none;
+  }
+}

@@ -1,0 +1,35 @@
+/* About.css */
+
+.text-container {
+  width: 100%;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.about-us {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+  }
+
+  .image-container img {
+    width: 100%;
+  }
+}
+
+.text-container ul {
+  list-style-type: none;
+  padding-left: 0;
+  font-family: inherit;
+}
+
+.text-container ul li {
+  margin-bottom: 10px;
+  font-family: inherit;
+}
